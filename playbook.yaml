@@ -2,4 +2,4 @@
   hosts: virtualmachines
   tasks:
    - name: Ping my hosts
-     ansible.builtin.command: docker exec miner2 miner print_keys | awk -F '"' '{print $2}' | head -n 1
+     ansible.builtin.command: ls
