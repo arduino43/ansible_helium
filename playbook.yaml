@@ -1,5 +1,7 @@
 - name: Testing
   hosts: virtualmachines
   tasks:
-   - name: Ping my hosts
-     ansible.builtin.command: ls
+   - name: This command will change the working directory to somedir/
+     ansible.builtin.shell:
+     cmd: ls -l 
+     chdir: /etc
