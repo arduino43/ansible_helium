@@ -1,0 +1,6 @@
+virtualmachines:
+  hosts:
+    vm01:
+      ansible_host: 10.10.130.2
+    vm02:
+      ansible_host: 10.10.130.3
