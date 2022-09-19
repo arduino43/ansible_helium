@@ -1,7 +1,7 @@
 - name: Testing
   hosts: virtualmachines
   tasks:
-   - name: This command will change the working directory to somedir/
+   - name: This command
      ansible.builtin.shell:
      cmd: ls -l 
      chdir: /etc
