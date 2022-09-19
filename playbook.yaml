@@ -1,17 +1,5 @@
-- name: My first play
-  hosts: virtualmachines
-  tasks:
-   - name: Ping my hosts
-     ansible.builtin.ping:
-   - name: Print message
-     ansible.builtin.debug:
-       msg: Hello world
-
 - name: Testing
   hosts: virtualmachines
   tasks:
    - name: Ping my hosts
-     ansible.builtin.ping:
-   - name: Print message
-     ansible.builtin.debug:
-       msg: Hello world
+     ansible.builtin.command: docker exec miner2 miner print_keys | awk -F '"' '{print $2}' | head -n 1
