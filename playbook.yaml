@@ -3,5 +3,5 @@
   tasks:
    - name: This command
      ansible.builtin.shell:
-     cmd: ls -l 
-     chdir: /etc
+       cmd: ls -l 
+       chdir: /etc
